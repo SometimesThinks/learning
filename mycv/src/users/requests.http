@@ -8,16 +8,16 @@ Content-Type: application/json
 }
 
 ### Find a particular user with given ID
-GET http://localhost:3000/auth/123
+GET http://localhost:3000/auth/2
 
 ### Find all users with a given email
-GET http://localhost:3000/auth?email=test5@test.com
+GET http://localhost:3000/auth?email=test3@test.com
 
 ### Delete a user with a given ID
-DELETE http://localhost:3000/auth/123
+DELETE http://localhost:3000/auth/2
 
 ### Update a user with a given ID
-PATCH http://localhost:3000/auth/123
+PATCH http://localhost:3000/auth/2
 Content-Type: application/json
 
 {
