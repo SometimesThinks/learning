@@ -28,8 +28,6 @@ app.post('/create', async (req, res) => {
 
   const adjTitle = title.toLowerCase();
 
-  console.log('TEST!!!!');
-
   const tempFilePath = path.join(__dirname, 'temp', adjTitle + '.txt');
   const finalFilePath = path.join(__dirname, 'feedback', adjTitle + '.txt');
 
@@ -45,4 +43,4 @@ app.post('/create', async (req, res) => {
   });
 });
 
-app.listen(80);
+app.listen(process.env.PORT);
